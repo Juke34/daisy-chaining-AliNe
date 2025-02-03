@@ -100,7 +100,7 @@ A typical command might look like the following.
 Here, we use the docker container platform, remote read and genome files, specify that we use single-ended short reads, list a number of aligners, enable trimming with fastp and provide specific options for the star aligner.
 
 ```bash
-nextflow run Juke34/daisy-chaining-aline.nf \
+nextflow run Juke34/daisy-chaining-aline \
   -r v1.0.0 \
   -profile docker \
   --reads https://github.com/Juke34/AliNe/raw/refs/heads/main/test/illumina/yeast_R1.fastq.gz,https://github.com/Juke34/AliNe/raw/refs/heads/main/test/illumina/yeast_R2.fastq.gz \
